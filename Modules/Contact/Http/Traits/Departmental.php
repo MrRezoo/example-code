@@ -4,42 +4,75 @@
 namespace Modules\Contact\Http\Traits;
 
 
+use Illuminate\Http\JsonResponse;
 use Modules\Contact\Entities\Department;
 use Modules\Contact\Http\Requests\DepartmentRequest;
 
 trait Departmental
 {
 
-    public function department_index()
+
+    /**
+     * @return JsonResponse
+     */
+    public function department_index(): JsonResponse
     {
-        return Department::select('name')->get();
+        return try_catch(null, null, '404', function () {
+            return Department::select('name')->get();
+        });
     }
 
-    public function department_store(DepartmentRequest $request)
+
+    /**
+     * @param DepartmentRequest $request
+     * @return JsonResponse
+     */
+    public function department_store(DepartmentRequest $request): JsonResponse
     {
-        return Department::create($request->validated());
+        return try_catch(null, null, '404', function () use ($request) {
+            return Department::create($request->validated());
+        });
+
     }
 
-    public function department_show(Department $department)
-    {
 
-        return $department;
+    /**a
+     * @param Department $department
+     * @return JsonResponse
+     */
+    public function department_show(Department $department): JsonResponse
+    {
+        return try_catch(null, null, '404', function () use ($department) {
+            return $department;
+        });
+
     }
+
 
     /**
      * @param DepartmentRequest $request
      * @param Department $department
-     * @return bool
+     * @return JsonResponse
      */
-    public function department_update(DepartmentRequest $request, Department $department)
+    public function department_update(DepartmentRequest $request, Department $department): JsonResponse
     {
-        return $department->update($request->validated());
+        return try_catch('department updated',null,'404',function () use ($department,$request){
+            return $department->update($request->validated());
+        });
+
     }
 
-    public function department_destroy(Department $department)
+    /**
+     * @param Department $department
+     * @return JsonResponse
+     * @throws \Exception
+     */
+    public function department_destroy(Department $department): JsonResponse
     {
+        return try_catch('department deleted',null,'404',function () use ($department){
+             $department->delete();
+        });
 
-        return $department->delete();
     }
 
 }

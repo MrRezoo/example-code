@@ -14,7 +14,7 @@ if (!function_exists('try_catch')) {
      * @param Closure|null $callback
      * @return JsonResponse
      */
-    function try_catch($try_message, $catch_message, $catch_status, Closure $callback = null)
+    function try_catch($try_message, $catch_message, $catch_status, Closure $callback = null): JsonResponse
     {
         try {
             $result = $callback();
@@ -43,7 +43,7 @@ if (!function_exists('try_catch_api')) {
      * @param int $exceptionStatus
      * @return JsonResponse
      */
-    function try_catch_api(Closure $callback, $successArray, $successStatus = 200, array $exceptionArray = null, int $exceptionStatus = 500)
+    function try_catch_api(Closure $callback, $successArray, $successStatus = 200, array $exceptionArray = null, int $exceptionStatus = 500): JsonResponse
     {
         try {
             $callback();
@@ -58,44 +58,5 @@ if (!function_exists('try_catch_api')) {
             );
         }
     }
-}
 
-
-//if (!function_exists('try_catch')) {
-//    /**
-//     * @param Closure $callback
-//     * @param array|null $exceptionArray
-//     * @param int $exceptionStatus
-//     * @return JsonResponse
-//     */
-//    function try_catch(Closure $callback, array $exceptionArray = null, int $exceptionStatus = 500)
-//    {
-//        try {
-//            return $callback();
-//        } catch (Exception $exception) {
-//            return \response()->json(
-//                $exceptionArray ?? ['message' => $exception->getMessage()],
-//                $exceptionStatus
-//            );
-//        }
-//    }
-//}
-
-if (!function_exists('upload_image')) {
-    /**
-     * @param UploadedFile $file
-     * @param string $directory
-     * @param string $disk
-     * @param int $width
-     * @param int $height
-     * @param string $encode
-     * @return string
-     */
-    function upload_image(UploadedFile $file, string $directory, int $width = 440, int $height = 320, string $encode = 'jpg', string $disk = 'public')
-    {
-        $fullPath = $directory . '/' . time() . Str::random(10) . '.' . $encode;
-        $imageFile = Image::make($file->getRealPath())->resize($width, $height)->encode($encode, 100);
-        Storage::disk($disk)->put($fullPath, $imageFile);
-        return $fullPath;
-    }
 }

@@ -9,17 +9,20 @@
 ## About Project 
 Hi guys! This is **[Mr.Rezoo](https://rezoo.ir)**  ,
 this is exampleCode with laravel project .
-i use **[nwidart](https://nwidart.com/)** to create modules
+
+####I use **[nwidart](https://nwidart.com/)** to create modules
 
 ## Use this command to prepare project
 
-if you want to build tables 
+if you want to build tables enter this command on your terminal
 `php artisan module:migrate <module-name>`
 
-if you want to fresh tables
+if you want to fresh tables enter this command on your terminal
 `php artisan module:migrate-refresh <module-name>`
 
-if you want to run seeders
+if you want to run seeders enter this command on your terminal
+`php artisan db:seed --class=\\Modules\\<module-name>\\Database\\Seeders\\<module-name>DatabaseSeeder`
+or enter this command 
 `php artisan module:seed <module-name>`
 
 

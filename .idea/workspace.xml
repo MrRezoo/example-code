@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a7b179-7b40-48a4-bdab-a09aa889a9db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/Contact/Http/Traits/Departmental.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Contact/Http/Traits/Tickets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/try_catch_api_simple_user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -162,8 +166,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/Modules/Contact/Http" />
+      <recent name="$PROJECT_DIR$/Modules/User/Http" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -179,7 +191,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608807984036</updated>
-      <workItem from="1608807985366" duration="2850000" />
+      <workItem from="1608807985366" duration="7563000" />
     </task>
     <servers />
   </component>
