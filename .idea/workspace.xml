@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70a7b179-7b40-48a4-bdab-a09aa889a9db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Entities/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Entities/Department.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Entities/Priority.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Entities/Priority.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Http/Requests/TicketRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Http/Requests/TicketRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Http/Traits/Tickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Http/Traits/Tickets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Entities/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608807984036</updated>
       <workItem from="1608807985366" duration="7563000" />
-      <workItem from="1608818011352" duration="9621000" />
+      <workItem from="1608818011352" duration="10661000" />
     </task>
     <servers />
   </component>

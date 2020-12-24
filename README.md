@@ -19,6 +19,7 @@ generate the passport access token
 
 if you want to build tables enter this command on your terminal
 `php artisan migrate:fresh`
+
 or enter this command
 `php artisan module:migrate <module-name>`
 
@@ -27,6 +28,7 @@ if you want to fresh tables enter this command on your terminal
 
 if you want to run seeders enter this command on your terminal
 `php artisan db:seed --class=\\Modules\\<module-name>\\Database\\Seeders\\<module-name>DatabaseSeeder`
+
 or enter this command 
 `php artisan module:seed <module-name>`
 
