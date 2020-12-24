@@ -41,7 +41,6 @@ trait Tickets
      */
     public function store(TicketRequest $request): JsonResponse
     {
-        // TODO : Definition on this line and how is work
         return try_catch(null, 'notfound', '404', function () use ($request) {
             return $request->user('api')->tickets()->create($request->validated());
         });

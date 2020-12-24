@@ -25,9 +25,9 @@ class CreateTicketsTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('priority_id')->references('id')->on('priority');
-            $table->foreign('department_id')->references('id')->on('department');
-            $table->foreign('parent_id')->references('id')->on('ticket');
+            $table->foreign('priority_id')->references('id')->on('priorities');
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->foreign('parent_id')->references('id')->on('tickets');
         });
     }
 

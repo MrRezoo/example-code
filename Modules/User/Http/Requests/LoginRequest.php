@@ -16,6 +16,7 @@ class LoginRequest extends FormRequest
 
         return [
             'mobile' => ['required','exists:users,mobile','regex:/^(09)\d{9}$/i','digits:11','numeric'],
+            'password' => ['required'],
         ];
     }
 

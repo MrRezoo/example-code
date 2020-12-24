@@ -4,7 +4,7 @@ namespace Modules\User\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class OtpCheckRegisterRequest extends FormRequest
+class RegisterRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.
@@ -13,9 +13,11 @@ class OtpCheckRegisterRequest extends FormRequest
      */
     public function rules()
     {
+
         return [
-            'code' => ['required','exists:user_sms_queue,code','numeric','digits:5'],
-            'name' => 'required',
+            'name' => ['required','string'],
+            'mobile' => ['required','regex:/^(09)\d{9}$/i','digits:11','numeric','unique:users,mobile'],
+            'password' => ['required','string'],
         ];
     }
 
@@ -29,12 +31,20 @@ class OtpCheckRegisterRequest extends FormRequest
         return true;
     }
 
-
     public function attributes()
     {
         return [
-            'code' => 'کد تائيدیه',
+            'mobile' => 'شماره موبایل',
             'name' => 'نام',
+            'password' => 'کلمه عبور'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'mobile.unique' => 'شما قبلا ثبت نام کرده‌اید.',
+        ];
+    }
+
 }

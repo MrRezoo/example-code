@@ -14,7 +14,12 @@ this is exampleCode with laravel project .
 
 ## Use this command to prepare project
 
+generate the passport access token
+`php artisan passport:install`
+
 if you want to build tables enter this command on your terminal
+`php artisan migrate:fresh`
+or enter this command
 `php artisan module:migrate <module-name>`
 
 if you want to fresh tables enter this command on your terminal
