@@ -2,8 +2,11 @@
 
 namespace Modules\Admin\Providers;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Modules\Contact\Entities\Department;
+use Modules\Contact\Entities\Ticket;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -24,6 +27,14 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
+
+        Route::model('department', Department::class, function () {
+            throw new ModelNotFoundException('department not found');
+        });
+
+        Route::model('ticket', Ticket::class, function () {
+            throw new ModelNotFoundException('ticket not found');
+        });
     }
 
     /**

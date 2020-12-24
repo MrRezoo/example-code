@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a7b179-7b40-48a4-bdab-a09aa889a9db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ExampleCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ExampleCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Database/Migrations/2020_12_24_113850_create_tickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Database/Migrations/2020_12_24_113850_create_tickets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Database/Migrations/2020_12_24_113931_create_priorities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Database/Migrations/2020_12_24_113849_create_priorities_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Contact/Database/Migrations/2020_12_24_114006_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Database/Migrations/2020_12_24_113848_create_departments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Contact/Entities/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Entities/Department.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Contact/Entities/Priority.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Entities/Priority.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Contact/Http/Requests/TicketRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Http/Requests/TicketRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Contact/Http/Traits/Tickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Http/Traits/Tickets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Contact/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Contact/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Contact/Routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/User/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Entities/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Requests/LoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Requests/LoginRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Requests/OtpCheckLoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Requests/RegisterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Requests/OtpCheckRegisterRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/User/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +216,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608807984036</updated>
       <workItem from="1608807985366" duration="7563000" />
-      <workItem from="1608818011352" duration="5394000" />
+      <workItem from="1608818011352" duration="9621000" />
     </task>
     <servers />
   </component>

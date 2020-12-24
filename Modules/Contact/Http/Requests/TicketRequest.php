@@ -17,9 +17,9 @@ class TicketRequest extends FormRequest
             'subject' => ['required', 'string'],
             'message' => ['required', 'string'],
             'status' => ['required', 'boolean'],
-            'priority_id' => ['nullable', 'exists:priority,id'],
-            'department_id' => ['nullable', 'exists:department,id'],
-            'parent_id' => ['nullable', 'exists:ticket,id']
+            'priority_id' => ['nullable', 'exists:priorities,id'],
+            'department_id' => ['nullable', 'exists:departments,id'],
+            'parent_id' => ['nullable', 'exists:tickets,id']
         ];
     }
 

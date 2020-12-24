@@ -15,7 +15,7 @@ trait Departmental
     /**
      * @return JsonResponse
      */
-    public function department_index(): JsonResponse
+    public function index(): JsonResponse
     {
         return try_catch(null, null, '404', function () {
             return Department::select('name')->get();
@@ -27,7 +27,7 @@ trait Departmental
      * @param DepartmentRequest $request
      * @return JsonResponse
      */
-    public function department_store(DepartmentRequest $request): JsonResponse
+    public function store(DepartmentRequest $request): JsonResponse
     {
         return try_catch(null, null, '404', function () use ($request) {
             return Department::create($request->validated());
@@ -40,7 +40,7 @@ trait Departmental
      * @param Department $department
      * @return JsonResponse
      */
-    public function department_show(Department $department): JsonResponse
+    public function show(Department $department): JsonResponse
     {
         return try_catch(null, null, '404', function () use ($department) {
             return $department;
@@ -54,7 +54,7 @@ trait Departmental
      * @param Department $department
      * @return JsonResponse
      */
-    public function department_update(DepartmentRequest $request, Department $department): JsonResponse
+    public function update(DepartmentRequest $request, Department $department): JsonResponse
     {
         return try_catch('department updated',null,'404',function () use ($department,$request){
             return $department->update($request->validated());
@@ -67,7 +67,7 @@ trait Departmental
      * @return JsonResponse
      * @throws \Exception
      */
-    public function department_destroy(Department $department): JsonResponse
+    public function destroy(Department $department): JsonResponse
     {
         return try_catch('department deleted',null,'404',function () use ($department){
              $department->delete();

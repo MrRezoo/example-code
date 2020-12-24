@@ -11,6 +11,4 @@
 |
 */
 
-Route::prefix('contact')->group(function() {
-    Route::get('/', 'ContactController@index');
-});
+

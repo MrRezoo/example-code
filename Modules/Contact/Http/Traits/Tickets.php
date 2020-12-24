@@ -16,7 +16,7 @@ trait Tickets
      */
     public function index(): JsonResponse
     {
-        return try_catch(null, 'not found', '404', function () {
+        return try_catch(null, "ticket not found", '404', function () {
             return Ticket::select('id', 'status', 'priority_id', 'department_id', 'created_at', 'updated_at')
                 ->with('priority:id,name')
                 ->with('department:id,name')->get();
@@ -29,7 +29,7 @@ trait Tickets
      */
     public function show(Ticket $ticket): JsonResponse
     {
-        return try_catch(null, 'notfound', '404', function () use ($ticket) {
+        return try_catch(null, 'ticket not found', '404', function () use ($ticket) {
             return $ticket->with('priority:id,name')
                 ->with('department:id,name')->first();
         });
@@ -52,7 +52,7 @@ trait Tickets
      * @param Ticket $ticket
      * @return JsonResponse
      */
-    public function update(TicketRequest $request, Ticket $ticket): JsonResponse
+    public function update(TicketRequest $request, Ticket $ticket)
     {
         return try_catch('ticket updated', 'notfound', '404', function () use ($ticket,$request) {
             return $ticket->update($request->validated());

@@ -9,7 +9,7 @@ class Department extends Model
 
     protected $fillable = ['name'];
 
-    protected $table = 'department';
+    protected $table = 'departments';
 
     public function usesTimestamps(): bool
     {
