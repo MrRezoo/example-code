@@ -9,10 +9,21 @@
 ## About Project 
 Hi guys! This is **[Mr.Rezoo](https://rezoo.ir)**  ,
 this is exampleCode with laravel project .
+i use **[nwidart](https://nwidart.com/)** to create modules
+
+## Use this command to prepare project
+
+if you want to build tables 
+`php artisan module:migrate <module-name>`
+
+if you want to fresh tables
+`php artisan module:migrate-refresh <module-name>`
+
+if you want to run seeders
+`php artisan module:seed <module-name>`
 
 
 ## License
-
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ##### Good luck! :gem: :top:
